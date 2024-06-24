@@ -1,5 +1,3 @@
-//Aqui estão as contantes
-
 const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
@@ -314,7 +312,8 @@ function checkForm(){
 
         usuario.push({
          nomeCad: email.value,
-         senhaCad: password.value
+         senhaCad: password.value,
+         userCad: username.value
         })
         localStorage.setItem("usuario", JSON.stringify(usuario));
 
@@ -330,4 +329,3 @@ function errorInput(input, message){
 
     formItem.className = "form-content error";
 }
-

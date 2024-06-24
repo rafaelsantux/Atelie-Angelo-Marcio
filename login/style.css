@@ -49,6 +49,7 @@ main {
     width: 100%;
     display: flex;
     flex: 1;
+
 }
 
 .images {
@@ -171,6 +172,15 @@ label {
 
 .sign-btn:hover {
     background-color:#f1c0a6;
+}
+
+#msgError {
+    text-align: center;
+    color: #ff0000;
+    background-color:#ffbbbb;
+    padding: 20px;
+    border-radius: 4px; 
+    display: none;
 }
 
 @media screen and (max-width: 540px) {
