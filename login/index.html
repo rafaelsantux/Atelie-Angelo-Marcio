@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,23 +19,21 @@
                         <div class="heading">
                           <h2>Bem-vindo(a) de volta!</h2>
                           <h6>Ainda não é nosso cliente?</h6>
-                          <a href="/cadastro/index.html" class="toggle">Cadastre-se.</a>
+                          <a href="http://127.0.0.1:5500/cadastro/index.html" class="toggle">Cadastre-se.</a>
                         </div>
-          
+                        <div id="msgError"></div>
                         <div class="actual-form">
                           <div class="input-wrap">
-                            <input type="email" class="input-field" id="email" required/>
-                            <label>E-mail</label>
-                            <p id="errorSenha"></p>
+                            <input type="email" class="input-field" id="email"/>
+                            <label>E-mail</label> 
                           </div>
                           
                           <div class="input-wrap">
                             <input type="password" minlength="8" class="input-field" id="password"/>
                             <label>Senha</label>
-                            <p id="errorSenha"></p>
                           </div>
           
-                          <input type="submit" value="Entrar" class="sign-btn"/>
+                          <input type="submit" value="Entrar" class="sign-btn" onclick="entrar()"/>
           
                         </div>
                     </form>
@@ -47,6 +45,12 @@
         </div>
       </main>
 
+
+
+
+    <script src="/login/script.js"></script>
+</body>
+</html>
 
 
 
